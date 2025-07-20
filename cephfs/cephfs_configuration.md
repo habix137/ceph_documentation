@@ -1,5 +1,10 @@
 # CephFS Setup and Subvolume Mount Guide
 
+## general architecture
+![this is general architecture of ceph file system](./images/general_arch.jpg)
+
+##
+
 ### because of ceph file system use two pool one for data and one for meta data you should create these two pool:
 
 ```bash
