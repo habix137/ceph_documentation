@@ -37,7 +37,7 @@ Modern Ceph is deployed with **cephadm**, which runs each daemon (**MON**, **MGR
 apt update && apt dist-upgrade -y && reboot
 
 # 4.2 Install required tools and Podman
-apt install -y podman lvm2 chrony curl gnupg
+apt install -y podman lvm2 chrony curl
 
 # 4.3 Disable swap and optimize swappiness
 swapoff -a
