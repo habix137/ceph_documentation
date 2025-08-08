@@ -85,6 +85,9 @@ cephadm bootstrap \
 
 Dashboard: `https://192.168.1.14:8443`
 
+![Alt text](../images/ceph_network_instruction.png "ceph network instruction")
+
+
 ---
 
 ## 7. Adding Worker Nodes to the Cluster
