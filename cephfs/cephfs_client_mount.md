@@ -135,5 +135,10 @@ ceph auth caps client.kubeuser \
   mds 'allow rwps fsname=datafs path=/volumes/_nogroup/test/55bba674-ef25-4399-b9a7-72dcfb226fbc' \
   osd 'allow rw tag cephfs data=datafs, allow rw tag cephfs metadata=datafs'
 ```
+> Force kill and unmount a stuck ceph-fuse mount:
+```bash
+sudo pkill -f 'ceph-fuse.*mnt/kuber' || true
+sudo umount -l /mnt/kuber 2>/dev/null || true
+```
 This widens MON caps and ensures OSD caps include metadata access.
 
